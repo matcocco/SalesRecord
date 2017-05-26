@@ -1,0 +1,30 @@
+Inputs: 
+
+	Double  
+
+		Cust_id, Cust_name, Sales_amount, Tax_code (1, 2, 3), Total_amount, User_continue 
+
+		Prompt "Are you on the 1) normal rate 2) nonprofit or 3) business? 
+
+		Prompt "Do you want to enter another record?" 
+
+ 
+
+Processing: 
+
+	Total_amount = Sales_amount - (Tax_amount x Sales_amount) 
+
+	Tax_codeNrm = .06 
+
+	Tax_codeNPF = 0.0 
+
+	Tax_codeBIZ = .05 
+
+	User_continue_1 = 1 
+
+
+ 
+
+Outputs: 
+
+	Print Cust_id, Cust_name, Sales_amount, Tax_code (1, 2, 3), Total_amount
